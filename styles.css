@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #ffe4e6; /* Light pink theme */
+    color: #4a4a4a;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #87cefa; /* Pink header */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffd1dc;
+}
+
+.utilities {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+    
+button#themeToggle {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button#themeToggle:hover {
+    transform: scale(1.2);
+}
+
+#clock {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+  /* Grid Layout */
+        .images-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center; /* Center the grid */
+        }
+
+        /* Individual Image Box */
+        .image-box {
+            flex: 1 1 calc(33.33% - 20px); /* Adjusts for 3 per row */
+            max-width: 250px; /* Limit the width of each box */
+            text-align: center; /* Center content in the box */
+            background-color: #f8f9fa; /* Light gray background */
+            border: 2px solid black; /* black border */
+            border-radius: 12px; /* Smooth rounded corners */
+            padding: 15px; /* Space inside the box */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .image-box img {
+            width: 100%; /* Image width matches container */
+            max-width: 200px; /* Limit maximum size */
+            border-radius: 10px; /* Rounded corners for images */
+            margin-bottom: 10px; /* Spacing below image */
+        }
+
+        .image-box p {
+            margin: 0;
+            font-size: 0.95rem; /* Adjust font size */
+            color: #333; /* Text color */
+            text-align: center; /* Center the text */
+            line-height: 1.6; /* Improve readability */
+            word-wrap: break-word; /* Wrap long words */
+            overflow-wrap: anywhere; /* Ensure wrapping works */
+        }
+
+
+.image-box img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #87cefa;
+    color: white;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+}
+
+header.dark-mode {
+    background-color: #4a4a4a;
+}
+/* Flexbox container for form and contact info */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Form Styles */
+.contact-form {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-input:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #87cefa;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #000000;
+}
+
+/* Contact Info Section */
+.contact-info {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-info iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-info p {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 14px;
+}
+.contact-links {
+  color:#87cefa;
+}
+ .icon-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon-container a {
+            text-decoration: none;
+            color: #87cefa;
+            font-size: 2rem;
+            transition: color 0.3s;
+        }
+        .icon-container a:hover {
+            color: white;
+        }

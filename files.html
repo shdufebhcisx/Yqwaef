@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#likes">What I Like</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+        <div class="utilities">
+            <button id="themeToggle">🌙</button>
+            <div id="clock"></div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section id="home" class="section intro">
+            <h2>Hi, I'm Hong Thavery!</h2>
+            <p>Welcome to my personal portfolio. Let me show you who I am and what I love!</p>
+          
+            <img src="IMG_1305.jpeg" alt="Profile Picture">
+        </section>
+
+        <section id="about" class="section about">
+            <h2>About Me</h2>
+            <div class="images-grid">
+                <div class="image-box">
+                    <img src="IMG_1310.jpeg" alt="Image 1">
+                   <div class="box"></div>
+                    <p>Hello again, I am Thavery hong. I am a student in CIA International School and this webpage will display all about myself. </p>
+                
+                </div>
+                <div class="image-box">
+                    <img src="IMG_1309.jpeg" alt="Image 2">
+                    <p>I am also very intrested in batminton as I enjoy playing badminton with my friend and family because it is fun and entertaining watching and playing them.</p>
+                </div>
+                <div class="image-box">
+                    <img src="IMG_1311.webp" alt="Image 3">
+                    <p>I also enjoy travelling to differnet countries to enjoy the different cultures and cuisines. </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="likes" class="section">
+            <h2>What I Like</h2>
+            <div class="images-grid">
+                <div class="image-box">
+                    <img src="IMG_1313.jpeg" alt="Image 4">
+                    <p>I enjoy and really like food as the aroma that is released from the food feels me up with the emotion of hungriness</p>
+                </div>
+                <div class="image-box">
+                    <img src="IMG_1316.jpeg" alt="Image 5">
+                    <p>I really enjoy listening to music and this single song is produced my one of my favorites artist and I love the vocals and melody of the song.</p>
+                </div>
+                <div class="image-box">
+                    <img src="https://github.com/chhengSokRos/super-duper-giggle/blob/main/6.png?raw=true" alt="Image 6">
+                    <p>I enjoy shopping in the mall as I like to look at desinger bags because of there beauty aswell as every normal girl.</p>
+                </div>
+                <div class="image-box">
+                    <img src="https://github.com/chhengSokRos/super-duper-giggle/blob/main/7.png?raw=true" alt="Image 7">
+                    <p>I also enjoy going to concert as I get to listen to my favorites music being payed live infront of me makes me be in awe as the song is played like the orginal song .</p>
+                </div>
+                <div class="image-box">
+                    <img src="IMG_1314.jpeg" alt="Image 8">
+                    <p>I enjoy travelling around the world too because during each experience I will discover or learn something new from these trips making each experience different.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me on social media or email!</p>
+            <div class="icon-container">
+               <a href="https://www.instagram.com/yourusername" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+               <a href="mailto:your.email@example.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+            </div>
+        </section>
+
+    </div>
+<section id="contact" class="contact-me">
+        <div>
+          <h3 class="contact-header">Contact Me</h3>
+        </div>
+        <div class="contact-container">
+          <form class="contact-form" onsubmit="return validateForm()">
+            <input
+              type="text"
+              id="fname"
+              name="fullname"
+              class="contact-input"
+              placeholder="Your Fullname..."
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="contact-input"
+              placeholder="Your Email..."
+            />
+            <textarea
+              id="subject"
+              name="subject"
+              class="contact-input"
+              placeholder="Type Your Message Here..."
+              style="height: 150px"
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          <div class="contact-info">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0704846267677!2d104.86317247505339!3d11.546801588652704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951f895a64d83%3A0x952f6b93a2ea10ac!2sCIA%20FIRST%20International%20School%20-%20High%20School!5e0!3m2!1sen!2skh!4v1735562452316!5m2!1sen!2skh"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p>Location: 839, Doung Ngeab, Khan Mean Chey Phnom Penh, 12102</p>
+            <p>Email: thavery.hong@ciaschool.edu.kh@ciaschool.edu.kh</p>
+            <p>Telegram: @saburiii_x_ryy</p>
+          </div>
+        </div>
+      </section>
+    <footer>
+        <p>&copy; 2025 hong thavery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
